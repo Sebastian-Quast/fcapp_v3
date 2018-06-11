@@ -1,4 +1,4 @@
-package de.thkoeln.fcapp_v3
+package de.thkoeln.fcappv3
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
