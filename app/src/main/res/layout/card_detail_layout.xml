@@ -29,7 +29,7 @@
             android:background="@drawable/background">
 
             <android.support.v7.widget.AppCompatImageView
-                android:id="@+id/card_detail_image"
+                android:id="@+id/card_image"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:adjustViewBounds="true"
@@ -51,7 +51,7 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/card_detail_image" />
+                app:layout_constraintTop_toBottomOf="@id/card_image" />
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/card_detail_problem_header"

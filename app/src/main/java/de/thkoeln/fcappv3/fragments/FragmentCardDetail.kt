@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import de.thkoeln.fcappv3.R
-import de.thkoeln.fcappv3.models.Card
+import de.thkoeln.fcappv3.data.models.Card
 import de.thkoeln.fcappv3.utils.loadUrl
 
 class FragmentCardDetail : Fragment() {
@@ -18,7 +18,7 @@ class FragmentCardDetail : Fragment() {
 
         val view = inflater.inflate(R.layout.card_detail_layout, container, false)
 
-        val imageView = view.findViewById<ImageView>(R.id.card_detail_image)
+        val imageView = view.findViewById<ImageView>(R.id.card_image)
         val titleTV = view.findViewById<TextView>(R.id.card_detail_title)
         val problemTV = view.findViewById<TextView>(R.id.card_detail_problem)
         val solutionTV = view.findViewById<TextView>(R.id.card_detail_solution)

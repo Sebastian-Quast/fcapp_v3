@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import de.thkoeln.fcappv3.fragments.FragmentCardDetail
-import de.thkoeln.fcappv3.models.Card
+import de.thkoeln.fcappv3.data.models.Card
 
 class CardDetailPagerAdapter (fragmentManager: FragmentManager, private val cards: ArrayList<Card>)
     : FragmentStatePagerAdapter(fragmentManager) {

@@ -1,4 +1,4 @@
-package de.thkoeln.fcappv3.models
+package de.thkoeln.fcappv3.data.models
 
 import java.io.Serializable
 

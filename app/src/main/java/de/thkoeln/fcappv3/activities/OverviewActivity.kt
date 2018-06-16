@@ -7,8 +7,11 @@ import android.support.v7.widget.GridLayoutManager
 import de.thkoeln.fcappv3.R
 import de.thkoeln.fcappv3.adapters.OverviewGridAdapter
 import de.thkoeln.fcappv3.data.services.CardService
-import de.thkoeln.fcappv3.models.Card
 import kotlinx.android.synthetic.main.activity_overview.*
+import android.support.v4.app.ActivityOptionsCompat
+import android.view.View
+import kotlinx.android.synthetic.main.card_grid_item.*
+
 
 class OverviewActivity : AppCompatActivity() {
 
@@ -18,14 +21,15 @@ class OverviewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_overview)
 
-        recyclerView.layoutManager = GridLayoutManager(this,  2)
-        recyclerView.adapter = OverviewGridAdapter(cards, {card : Card -> cardClicked(card)})
+        recyclerView.layoutManager = GridLayoutManager(this, 2)
+        recyclerView.adapter = OverviewGridAdapter(cards, { Int -> cardClicked(Int) })
 
     }
 
-    private fun cardClicked(card: Card){
+    private fun cardClicked(pos: Int) {
         val intent = Intent(this@OverviewActivity, DetailActivity::class.java)
         intent.putExtra("CARD", cards)
+        intent.putExtra("POSITION", pos)
         startActivity(intent)
     }
 }

@@ -1,6 +1,6 @@
 package de.thkoeln.fcappv3.data.services
 
-import de.thkoeln.fcappv3.models.Card
+import de.thkoeln.fcappv3.data.models.Card
 import de.thkoeln.fealesschange.data.repositories.CardData.CARDS
 
 

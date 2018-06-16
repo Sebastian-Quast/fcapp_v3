@@ -1,6 +1,6 @@
 package de.thkoeln.fealesschange.data.repositories
 
-import de.thkoeln.fcappv3.models.Card
+import de.thkoeln.fcappv3.data.models.Card
 
 
 internal object CardData {
